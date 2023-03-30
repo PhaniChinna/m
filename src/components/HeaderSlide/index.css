@@ -1,0 +1,102 @@
+.HeaderSlider-container {
+  background-color: #131313;
+  height: 70px;
+  padding: 5px;
+}
+
+.Header-Slider-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.HeaderSlider-Movies-logo {
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 50px;
+  height: 40px;
+}
+
+.Un-ordered-list-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.Header-slider-Home {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+  letter-spacing: -0.355556px;
+  color: #ffffff;
+}
+
+.Header-slider-Popular {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  color: #ffffff;
+}
+
+.Header-slider-flex-end-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 150px;
+}
+
+.Header-bs-search {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  color: white;
+  margin-top: -40px;
+}
+
+.Header-Avatar-image {
+  width: 35px;
+  height: 35px;
+  margin-left: 50px;
+  margin-top: -46px;
+  cursor: pointer;
+}
+
+.Header-Slider-add-Que {
+  margin-top: -45px;
+  width: 35px;
+  height: 35px;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .Header-slider-Home {
+    display: none;
+  }
+  .Header-slider-Popular {
+    display: none;
+  }
+  .Header-slider-flex-end-container {
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .Header-Avatar-image {
+    display: none;
+  }
+  .Header-bs-search {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .Header-Slider-add-Que {
+    display: none;
+  }
+}

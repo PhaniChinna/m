@@ -1,0 +1,138 @@
+.LoginSlide-container {
+  background-image: url('https://res.cloudinary.com/dkwof0tuj/image/upload/v1680071364/netfilx_1_ivb9o8.png');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  padding: 2px;
+}
+
+.LoginSlider-image-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.LoginSlider-movies-logo {
+  width: 200px;
+  height: 70px;
+  margin-top: -100px;
+}
+
+.LoginSlider-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.LoginSlider-Form-container {
+  background-color: #0c0b10;
+  width: 350px;
+  min-height: 100px;
+  display: flex;
+  opacity: 0.8;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LoginSlider-heading {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.LoginSlider-username {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 2px;
+  margin-left: -170px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.LoginSlider-input-type-text {
+  background: #333333;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  width: 250px;
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.LoginSlider-password {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 2px;
+  margin-left: -170px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.LoginSlider-input-type-password {
+  background: #333333;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  width: 250px;
+  color: white;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 4px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.LoginSlider-login-button {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 30px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #e50914;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .LoginSlider-movies-logo {
+    margin-left: -60px;
+    margin-bottom: 100px;
+  }
+}
+
+.Login-Error-message {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: -10px;
+  margin-left: -10px;
+  color: #dc2626;
+}
