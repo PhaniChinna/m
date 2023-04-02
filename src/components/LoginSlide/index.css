@@ -115,6 +115,7 @@
   cursor: pointer;
   background-color: #e50914;
   outline: none;
+  border-radius: 8px;
   border: none;
   color: white;
 }

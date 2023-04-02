@@ -1,0 +1,89 @@
+.Not-found-image-cont {
+  width: 1280px;
+  height: 565px;
+}
+
+.Not-found-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -450px;
+}
+
+.Not-found-lost-your-way {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 125px;
+  color: #ffffff;
+}
+
+.Not-found-paragraph {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  margin-top: -60px;
+  color: #ffffff;
+}
+
+.Not-found-para-page {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  margin-top: -10px;
+  color: #ffffff;
+}
+
+.Not-found-button {
+  width: 127px;
+  height: 48px;
+  background: #ffffff;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #171f46;
+  cursor: pointer;
+  margin-top: -0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .Not-found-image-cont {
+    height: 100vh;
+    width: 100%;
+  }
+  .Not-found-slider-container {
+    margin-top: -550px;
+  }
+  .Not-found-lost-your-way {
+    font-size: 50px;
+  }
+  .Not-found-paragraph {
+    font-size: 18px;
+  }
+  .Not-found-para-page {
+    font-size: 18px;
+  }
+  .Not-found-button {
+    width: 100px;
+    height: 35px;
+    font-size: 10px;
+  }
+}

@@ -6,6 +6,8 @@ import TrendingSlider from '../TrendingSlide'
 
 import OriginalSlider from '../OriginalSlide'
 
+import ContactUs from '../ContactUsSlide'
+
 import './index.css'
 
 class HomeSlider extends Component {
@@ -40,6 +42,9 @@ class HomeSlider extends Component {
           <div className="Home-slide-header">
             <h1 className="Home-slider-Original-heading"> Originals</h1>
             <OriginalSlider />
+          </div>
+          <div>
+            <ContactUs />
           </div>
         </div>
       </>

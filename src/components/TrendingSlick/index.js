@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 import Slider from 'react-slick'
 
 import 'slick-carousel/slick/slick.css'
@@ -43,13 +45,19 @@ const TrendingSlick = props => {
     <>
       <Slider {...settings} className="Trending-slick-Slider">
         {Trending.map(each => (
-          <li className="Trending-slider-list-item">
-            <img
-              src={each.posterPath}
-              alt={each.title}
-              className="Trending-slick-image"
-            />
-          </li>
+          <Link
+            to={`/movies/${each.id}`}
+            key={each.id}
+            className="Link-slider-Home"
+          >
+            <li className="Trending-slider-list-item">
+              <img
+                src={each.posterPath}
+                alt={each.title}
+                className="Trending-slick-image"
+              />
+            </li>
+          </Link>
         ))}
       </Slider>
     </>
