@@ -54,11 +54,13 @@
 }
 
 .Header-bs-search {
-  width: 23px;
-  height: 23px;
+  width: 19px;
+  height: 19px;
   cursor: pointer;
   color: white;
-  margin-top: -40px;
+  margin-right: 38px;
+  display: flex;
+  margin-top: -1px;
 }
 
 .Header-Avatar-image {
@@ -96,7 +98,7 @@
     display: none;
   }
   .Header-bs-search {
-    margin-right: 35px;
+    margin-right: 50px;
   }
 }
 
@@ -192,9 +194,10 @@
 
 @media screen and (max-width: 767px) {
   .HeaderSlider-Movies-logo {
-    width: 120px;
+    width: 100px;
+    height: 100px;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 20px;
     height: 35px;
   }
 }

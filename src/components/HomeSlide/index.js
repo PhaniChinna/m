@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import Cookies from 'js-cookie'
 
 import HeaderSlider from '../HeaderSlide'
 
@@ -11,7 +12,42 @@ import ContactUs from '../ContactUsSlide'
 import './index.css'
 
 class HomeSlider extends Component {
+  state = {
+    initialPoster: [],
+  }
+
+  componentDidMount() {
+    this.getInitialPoster()
+  }
+
+  getInitialPoster = async () => {
+    const jwtToken = Cookies.get('jwt_token')
+    const TopRatedMovies = 'https://apis.ccbp.in/movies-app/top-rated-movies'
+    const options = {
+      headers: {
+        Authorization: `Bearer ${jwtToken}`,
+      },
+      method: 'GET',
+    }
+    const response = await fetch(TopRatedMovies, options)
+    const data = await response.json()
+    console.log(data)
+    const fetchedData = data.results.length
+    const randomPoster = data.results[Math.floor(Math.random() * fetchedData)]
+    const updatedData = {
+      id: randomPoster.id,
+      backdropPath: randomPoster.backdrop_path,
+      overview: randomPoster.overview,
+      title: randomPoster.title,
+    }
+    this.setState({
+      initialPoster: updatedData,
+    })
+  }
+
   render() {
+    const {initialPoster} = this.state
+    const {id, backdropPath, overview, title} = initialPoster
     return (
       <>
         <div className="Header-home-slider">
@@ -19,16 +55,14 @@ class HomeSlider extends Component {
         </div>
         <div className="Home-slider-container">
           <img
-            src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679676916/Image_ghxnzr.png"
+            src={backdropPath}
             className="HomeSlider-SuperMan-image"
             alt="superMan"
+            key={id}
           />
           <div className="Home-slider-superman-container">
-            <h1 className="Home-Slider-SuperMan">Super Man</h1>
-            <p className="Home-slider-Dc-Comic">
-              Superman is a fictional superhero who first appeared in american
-              comic book published by DC Comic
-            </p>
+            <h1 className="Home-Slider-SuperMan">{title}</h1>
+            <p className="Home-slider-Dc-Comic">{overview}</p>
             <button className="Home-slider-button" type="button">
               Play
             </button>

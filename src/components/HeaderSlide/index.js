@@ -5,23 +5,7 @@ import {BsSearch} from 'react-icons/bs'
 import './index.css'
 
 class HeaderSlider extends Component {
-  state = {
-    showSearchBar: false,
-  }
-
-  onClickSearchIcon = () => {
-    this.setState(PreV => ({showSearchBar: !PreV.showSearchBar}))
-  }
-
-  onChangeSearchInput = event => {
-    const {searchInput} = this.props
-    if (event.key === 'ENTER'.toLocaleLowerCase()) {
-      searchInput(event.target.value)
-    }
-  }
-
   render() {
-    const {showSearchBar} = this.state
     return (
       <>
         <div className="HeaderSlider-container">
@@ -47,20 +31,8 @@ class HeaderSlider extends Component {
             </ul>
           </div>
           <div className="Header-slider-flex-end-container">
-            <div className="Header-input-search-container">
-              {showSearchBar && (
-                <input
-                  type="search"
-                  className="InputType-search-button"
-                  onKeyDown={this.onChangeSearchInput}
-                />
-              )}
-            </div>
             <Link to="/search" className="Link-header-card-container">
-              <BsSearch
-                className="Header-bs-search"
-                onClick={this.onClickSearchIcon}
-              />
+              <BsSearch className="Header-bs-search" />
             </Link>
 
             <Link to="/account" className="Avatar-link">

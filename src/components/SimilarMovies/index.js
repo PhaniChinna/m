@@ -9,6 +9,7 @@ const similarMovies = props => {
           <img
             src={each.posterPath}
             alt={each.title}
+            key={each.id}
             className="Similar-movies-list-Route"
           />
         </li>

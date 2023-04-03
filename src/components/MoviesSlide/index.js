@@ -139,6 +139,7 @@ class MovieSlider extends Component {
     } = this.state
     const {
       adult,
+      id,
       backdropPath,
       budget,
       overview,
@@ -159,6 +160,7 @@ class MovieSlider extends Component {
           <img
             src={backdropPath}
             alt={title}
+            key={id}
             className="Movie-details-Image-list"
           />
           <div className="Movies-item-detail-h-p-hr-container">

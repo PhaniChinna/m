@@ -59,7 +59,7 @@ class TrendingSlider extends Component {
     return (
       <>
         <div className="Render-Success-view">
-          <TrendingSlick Trending={TrendingMovies} />
+          <TrendingSlick Trending={TrendingMovies} key={TrendingMovies.id} />
         </div>
       </>
     )

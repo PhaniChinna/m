@@ -2,10 +2,12 @@ import './index.css'
 
 const SpokenLanguageSlide = props => {
   const {SpokenLanguage} = props
-  const {englishName} = SpokenLanguage
+  const {id, englishName} = SpokenLanguage
   return (
     <li>
-      <p className="Spoken-language-slider-container-english">{englishName}</p>
+      <p key={id} className="Spoken-language-slider-container-english">
+        {englishName}
+      </p>
     </li>
   )
 }

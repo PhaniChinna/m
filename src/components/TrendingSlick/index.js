@@ -54,6 +54,7 @@ const TrendingSlick = props => {
               <img
                 src={each.posterPath}
                 alt={each.title}
+                key={each.id}
                 className="Trending-slick-image"
               />
             </li>
