@@ -81,7 +81,7 @@ class OriginalSlider extends Component {
   }
 
   renderLoaderView = () => (
-    <div className="Render-loader-Original">
+    <div className="Render-loader-Original" testid="loader">
       <Loader
         type="TailSpin"
         color="#D81F26"

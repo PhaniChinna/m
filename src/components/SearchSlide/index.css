@@ -1,0 +1,70 @@
+.Search-Route-Heading {
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  background-size: cover;
+  padding: 2px;
+}
+
+.SearchInput-container {
+  list-style-type: none;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Search-slider-image-logo {
+  width: 130px;
+  height: 130px;
+  margin-top: 12px;
+  margin-right: 12px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .SearchInput-container {
+    margin-left: 10px;
+  }
+}
+
+.Render-missing-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Render-oh-no-image {
+  margin-top: 30px;
+}
+
+.Render-your-paragraph {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.Render-loader-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Search-input-loader {
+  margin-top: 100px;
+}
+
+.SearchIcon-view {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}

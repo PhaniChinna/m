@@ -25,7 +25,7 @@ const ContactUs = () => (
           alt="YouTube"
         />
       </div>
-      <h1 className="Contact-us-heading">contact Us</h1>
+      <p className="Contact-us-heading">contact Us</p>
     </div>
   </>
 )

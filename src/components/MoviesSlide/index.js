@@ -104,7 +104,7 @@ class MovieSlider extends Component {
   }
 
   renderLoaderViewDetail = () => (
-    <div className="Render-loader-movie-details">
+    <div className="Render-loader-movie-details" login website logo>
       <Loader
         type="TailSpin"
         color="#D81F26"

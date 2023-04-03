@@ -125,4 +125,26 @@
   .Account-slider-ultra {
     height: 30px;
   }
+  .Account-card-Account {
+    font-size: 26px;
+  }
+  .MemberShip-check-detail-heading {
+    font-size: 20px;
+  }
+  .Account-gmail-com {
+    font-size: 14px;
+  }
+  .Account-password-com {
+    font-size: 14px;
+  }
+  .Account-Route-plan-details {
+    font-size: 11px;
+  }
+  .Account-slide-premium {
+    font-size: 14px;
+  }
+  .Account-slider-ultra {
+    font-size: 12px;
+    height: 18px;
+  }
 }

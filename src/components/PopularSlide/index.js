@@ -82,7 +82,7 @@ class PopularSlider extends Component {
   }
 
   renderLoaderView = () => (
-    <div className="render-loader-view-list">
+    <div className="render-loader-view-list" testid="loader">
       <Loader
         type="TailSpin"
         color="#D81F26"

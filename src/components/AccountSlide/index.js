@@ -31,7 +31,7 @@ const AccountSlider = props => (
             <h1 className="Account-card-Account">Account</h1>
             <hr />
             <div className="MemberShip-row-container">
-              <h1 className="MemberShip-check-detail-heading ">Member ship</h1>
+              <h1 className="MemberShip-check-detail-heading ">MemberShip</h1>
               <div className="Account-member-ship-route">
                 <p className="Account-gmail-com">{username}@gmail.com</p>
                 <p className="Account-password-com">
@@ -41,10 +41,12 @@ const AccountSlider = props => (
             </div>
             <hr />
             <div className="Account-slider-div-container">
-              <h1 className="Account-Route-plan-details">Plan details</h1>
+              <h1 className="Account-Route-plan-details">PlanDetails</h1>
               <div className="Account-slider-premium-ultra">
                 <p className="Account-slide-premium">Premium</p>
-                <p className="Account-slider-ultra">Ultra HD</p>
+                <div className="Account-slider-ultra-container">
+                  <p className="Account-slider-ultra">Ultra HD</p>
+                </div>
               </div>
             </div>
             <hr />

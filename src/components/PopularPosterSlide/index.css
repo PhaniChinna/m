@@ -10,9 +10,9 @@
 
 @media screen and (max-width: 767px) {
   .Popular-poster-slider {
-    width: 135px;
-    height: 135px;
+    width: 115px;
+    height: 115px;
     margin-left: -30px;
-    margin-right: 54px;
+    margin-right: 44px;
   }
 }

@@ -67,7 +67,7 @@ class LoginSlider extends Component {
           <img
             src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679652587/Group_7399_2_x2dqea.png"
             className="LoginSlider-movies-logo"
-            alt="Movie"
+            alt="login website logo"
           />
         </div>
         <div className="LoginSlider-login-container">
