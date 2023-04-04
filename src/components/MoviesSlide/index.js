@@ -110,6 +110,7 @@ class MovieSlider extends Component {
         color="#D81F26"
         height="50"
         width="50"
+        testid="loader"
         className="Render-loader-spinner"
       />
     </div>
@@ -119,10 +120,10 @@ class MovieSlider extends Component {
     <div className="Render-failure-view-details">
       <img
         src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679902480/alert-triangle_hemaln.png"
-        alt="Danger"
+        alt="failure view"
       />
       <p className="Render-failure-Something-wrong">
-        Something Went Wrong Please Try again
+        Something went wrong. Please try again
       </p>
       <button className="render-try-again-button" type="button">
         Try Again
@@ -241,9 +242,7 @@ class MovieSlider extends Component {
         </div>
         <div>
           {this.renderTotalSuccessViewPage()}
-          <div>
-            <ContactUs />
-          </div>
+          <ContactUs />
         </div>
       </>
     )

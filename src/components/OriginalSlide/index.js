@@ -2,7 +2,7 @@ import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 
-import TrendingSlick from '../TrendingSlick'
+import OriginalSlicks from '../OriginalSlick'
 
 import './index.css'
 
@@ -74,7 +74,7 @@ class OriginalSlider extends Component {
     return (
       <>
         <div className="Render-Original-movies">
-          <TrendingSlick Trending={originalMovies} />
+          <OriginalSlicks Originals={originalMovies} />
         </div>
       </>
     )

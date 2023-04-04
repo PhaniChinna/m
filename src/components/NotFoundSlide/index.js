@@ -13,7 +13,8 @@ const NotFoundSlide = () => (
       <div className="Not-found-slider-container">
         <h1 className="Not-found-lost-your-way">Lost Your Way ?</h1>
         <p className="Not-found-paragraph">
-          We are sorry the page you requested could not be found{' '}
+          we are sorry, the page you requested could not be found Please go back
+          to the homepage.
         </p>
         <p className="Not-found-para-page">please go back to home page </p>
         <Link to="/">

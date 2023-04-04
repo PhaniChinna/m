@@ -2,7 +2,7 @@ import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 import {Link} from 'react-router-dom'
-import {AiOutlineSearch} from 'react-icons/ai'
+import {HiOutlineSearch} from 'react-icons/hi'
 
 import HeaderSlider from '../HeaderSlide'
 
@@ -106,7 +106,7 @@ class SearchRoute extends Component {
   }
 
   renderLoaderView = () => (
-    <div className="Render-search-loader-view">
+    <div className="Render-search-loader-view" testid="loader">
       <Loader
         type="TailSpin"
         color="#D81F26"
@@ -133,12 +133,30 @@ class SearchRoute extends Component {
     </div>
   )
 
+  renderEmptyView = () => {
+    const {searchInput} = this.state
+    const isEmpty = searchInput === ''
+    return (
+      <div>
+        {isEmpty ? (
+          <div className="Render-search-icon-container">
+            <h1 className="Render-search-filter-paragraph">
+              Search the movie,by clicking on the search Icon
+            </h1>
+          </div>
+        ) : (
+          this.renderSuccessDataLIst()
+        )}
+      </div>
+    )
+  }
+
   renderTotalSuccessViewDetail = () => {
     const {apiStatus} = this.state
 
     switch (apiStatus) {
       case apiStatusConstant.success:
-        return this.renderSuccessDataLIst()
+        return this.renderEmptyView()
       case apiStatusConstant.inProgress:
         return this.renderLoaderView()
       case apiStatusConstant.failure:
@@ -166,9 +184,10 @@ class SearchRoute extends Component {
               <button
                 className="Search-icon-button-slider"
                 type="button"
+                testid="searchButton"
                 onClick={this.getSearchMovieDetails}
               >
-                <AiOutlineSearch className="Gr-search-icon" />
+                <HiOutlineSearch className="Gr-search-icon" />
               </button>
             </div>
           </div>

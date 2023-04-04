@@ -22,7 +22,7 @@ class HomeSlider extends Component {
 
   getInitialPoster = async () => {
     const jwtToken = Cookies.get('jwt_token')
-    const TopRatedMovies = 'https://apis.ccbp.in/movies-app/top-rated-movies'
+    const TopRatedMovies = 'https://apis.ccbp.in/movies-app/trending-movies'
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,

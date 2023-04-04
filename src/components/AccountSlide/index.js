@@ -14,8 +14,6 @@ const AccountSlider = props => (
   <ReactContext.Consumer>
     {value => {
       const {username, password} = value
-      const Username = localStorage.getItem(username)
-      const Password = localStorage.getItem(password)
       const OnClickLogout = () => {
         const {history} = props
         Cookies.remove('jwt_token')
@@ -31,15 +29,15 @@ const AccountSlider = props => (
             <h1 className="Account-card-Account">Account</h1>
             <hr />
             <div className="MemberShip-row-container">
-              <h1 className="MemberShip-check-detail-heading ">MemberShip</h1>
+              <p className="MemberShip-check-detail-heading ">Member Ship</p>
               <div className="Account-member-ship-route">
-                <p className="Account-gmail-com">{Username}@gmail.com</p>
-                <p className="Account-password-com">{Password}</p>
+                <p className="Account-gmail-com">{username}@gmail.com</p>
+                <p className="Account-password-com">{password}:Password</p>
               </div>
             </div>
             <hr />
             <div className="Account-slider-div-container">
-              <h1 className="Account-Route-plan-details">PlanDetails</h1>
+              <p className="Account-Route-plan-details">Plan details</p>
               <div className="Account-slider-premium-ultra">
                 <p className="Account-slide-premium">Premium</p>
                 <div className="Account-slider-ultra-container">

@@ -66,9 +66,10 @@ class TrendingSlider extends Component {
   }
 
   renderLoaderView = () => (
-    <div className="Render-loader-Trending" testid="loader">
+    <div className="Render-loader-Trending">
       <Loader
         type="TailSpin"
+        testid="loader"
         color="#D81F26"
         height="50"
         width="50"

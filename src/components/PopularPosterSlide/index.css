@@ -16,3 +16,11 @@
     margin-right: 44px;
   }
 }
+
+.List-un-ou {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -20px;
+}

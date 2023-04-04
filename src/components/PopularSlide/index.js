@@ -61,7 +61,9 @@ class PopularSlider extends Component {
     const {PopularMoviesList} = this.state
     return (
       <>
-        <PopularSliderSlide PopularPost={PopularMoviesList} />
+        <ul>
+          <PopularSliderSlide PopularPost={PopularMoviesList} />
+        </ul>
       </>
     )
   }

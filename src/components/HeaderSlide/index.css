@@ -273,3 +273,80 @@
     margin-right: -35px;
   }
 }
+
+.Menu-card-container {
+  background-color: 000205;
+}
+
+@media screen and (min-width: 767px) {
+  .Menu-card-container {
+    display: none;
+  }
+}
+
+.Menu-card-list-container {
+  margin-left: 0px;
+  display: flex;
+  background-color: #000000;
+  margin-left: -330px;
+  opacity: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.Lits {
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.Header-home-un-ordered-list-card {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.Header-home-heading {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.Header-popular-populra {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 20px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.Header-popular-account {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  cursor: pointer;
+  color: #ffffff;
+}
